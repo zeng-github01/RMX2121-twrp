@@ -17,10 +17,10 @@ on post-fs
 on boot
     start health-hal-2-1
     setprop sys.usb.config adb
-	chmod 0777 /system/bin/setRMX2121.sh
+    chmod 0777 /system/bin/setRMX2121.sh
     start setVersion
 	
-	service setVersion /system/bin/setRMX2121.sh
+service setVersion /system/bin/setRMX2121.sh
     user root
     group root
     disabled
