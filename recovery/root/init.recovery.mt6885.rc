@@ -17,10 +17,10 @@ on post-fs
 on boot
     start health-hal-2-1
     setprop sys.usb.config adb
-	chmod 0777 /system/bin/setRMX2121.sh
+    chmod 0777 /system/bin/setRMX2121.sh
     start setVersion
 	
-	service setVersion /system/bin/setRMX2121.sh
+service setVersion /system/bin/setRMX2121.sh
     user root
     group root
     disabled
@@ -29,8 +29,8 @@ on boot
 	
 
 on property:vendor.sys.listeners.registered=true
-	start hal_cryptoeng_oplus
-	start mobicore
+    start hal_cryptoeng_oplus
+    start mobicore
     start keymaster-4-1
     start gatekeeper-1-0
 
