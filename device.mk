@@ -28,6 +28,9 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
+    
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
